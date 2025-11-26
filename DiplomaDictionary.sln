@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiplomaDictionary", "DiplomaDictionary\DiplomaDictionary.csproj", "{9EF5746F-1202-4366-8781-49B4E3185AED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiplomaDictionary.Data", "DiplomaDictionary.Data\DiplomaDictionary.Data.csproj", "{3277AEF5-B702-4899-9561-3AD2E0C71278}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiplomaDictionary.Domain", "DiplomaDictionary.Domain\DiplomaDictionary.Domain.csproj", "{6362ECC0-82D4-429A-81B6-A9C02058739A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EF5746F-1202-4366-8781-49B4E3185AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF5746F-1202-4366-8781-49B4E3185AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF5746F-1202-4366-8781-49B4E3185AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF5746F-1202-4366-8781-49B4E3185AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3277AEF5-B702-4899-9561-3AD2E0C71278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3277AEF5-B702-4899-9561-3AD2E0C71278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3277AEF5-B702-4899-9561-3AD2E0C71278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3277AEF5-B702-4899-9561-3AD2E0C71278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6362ECC0-82D4-429A-81B6-A9C02058739A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6362ECC0-82D4-429A-81B6-A9C02058739A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6362ECC0-82D4-429A-81B6-A9C02058739A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6362ECC0-82D4-429A-81B6-A9C02058739A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
