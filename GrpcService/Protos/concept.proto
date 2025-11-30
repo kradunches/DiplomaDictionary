@@ -1,0 +1,148 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService";
+
+package concept;
+
+service SubjectService {
+  // Term
+  rpc GetAllTerms (GetAllTermsRequest) returns (GetAllTermsResponse);
+  rpc GetTermsByWord (GetTermsByWordRequest) returns (GetTermsByWordResponse);
+  rpc CreateTerm (CreateTermRequest) returns (CreateTermResponse);
+  rpc UpdateTerm (UpdateTermRequest) returns (UpdateTermResponse);
+  rpc DeleteTerm (DeleteTermRequest) returns (DeleteTermResponse);
+  rpc SubscribeTermsStream (SubscribeTermsRequest) returns (stream Term);
+  //
+  // Subject
+  rpc GetAllSubjects (GetAllSubjectsRequest) returns (GetAllSubjectsResponse);
+  rpc GetSubjectsByEntrance (GetSubjectsByEntranceRequest) returns (GetSubjectsByEntranceResponse);
+  rpc CreateSubject (CreateSubjectRequest) returns (CreateSubjectResponse);
+  rpc UpdateSubject (UpdateSubjectRequest) returns (UpdateSubjectResponse);
+  rpc DeleteSubject (DeleteSubjectRequest) returns (DeleteSubjectResponse);
+  //
+}
+
+/// Term
+// GetAllTerms
+message GetAllTermsRequest {
+}
+
+message GetAllTermsResponse {
+  repeated Term terms = 1;
+}
+//
+
+// GetTermByWord
+message GetTermsByWordRequest {
+  string search_string = 1;
+}
+
+message GetTermsByWordResponse {
+  repeated Term terms = 1;
+}
+//
+
+// CreateTerm
+message CreateTermRequest {
+  string name = 1;
+  string definition = 2;
+  int32 subject_id = 3;
+}
+
+message CreateTermResponse {
+  int32 id = 1;
+}
+//
+
+// UpdateTerm
+message UpdateTermRequest {
+  Term term = 1;
+}
+
+message UpdateTermResponse {
+  int32 id = 1;
+}
+//
+
+// DeleteSubject
+message DeleteTermRequest {
+  int32 id = 1;
+}
+
+message DeleteTermResponse {
+  int32 id = 1;
+}
+//
+
+// Subscribe request
+message SubscribeTermsRequest {
+  int32 subject_id = 1;
+}
+
+// Dto
+message Term {
+  int32 Id = 1;
+  string Name = 2;
+  string Definition = 3;
+  string SubjectName = 4;
+}
+///
+
+/// Subject
+// GetAllSubjects
+message GetAllSubjectsRequest {
+}
+
+message GetAllSubjectsResponse {
+  repeated Subject subjects = 1;
+}
+//
+
+// GetSubjectsByEntrance
+message GetSubjectsByEntranceRequest {
+  string search_string = 1;
+}
+
+message GetSubjectsByEntranceResponse {
+  repeated Subject subjects = 1;
+}
+//
+
+// CreateSubject
+message CreateSubjectRequest {
+  string name = 1;
+}
+
+message CreateSubjectResponse {
+  int32 id = 1;
+}
+//
+
+// UpdateSubject
+message UpdateSubjectRequest {
+  //  int32 id = 1;
+  //  string name = 2;
+  Subject subject = 1;
+}
+
+message UpdateSubjectResponse {
+  int32 id = 1;
+}
+//
+
+// DeleteSubject
+message DeleteSubjectRequest {
+  int32 id = 1;
+}
+
+message DeleteSubjectResponse {
+  int32 id = 1;
+}
+
+// Dto
+message Subject {
+  int32 id = 1;
+  string name = 2;
+}
+//
+///

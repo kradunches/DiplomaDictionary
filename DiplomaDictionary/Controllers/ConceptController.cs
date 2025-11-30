@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DiplomaDictionary.Controllers;
 
-// todo: протестировать все эндпоинты
 [ApiController]
 [Route("controller")]
 public class ConceptController : ControllerBase

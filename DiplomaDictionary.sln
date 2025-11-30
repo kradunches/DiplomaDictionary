@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiplomaDictionary.Data", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiplomaDictionary.Domain", "DiplomaDictionary.Domain\DiplomaDictionary.Domain.csproj", "{6362ECC0-82D4-429A-81B6-A9C02058739A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcService", "GrpcService\GrpcService.csproj", "{67CD64C5-FDE5-488B-A30C-22B0085E13A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{6362ECC0-82D4-429A-81B6-A9C02058739A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6362ECC0-82D4-429A-81B6-A9C02058739A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6362ECC0-82D4-429A-81B6-A9C02058739A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CD64C5-FDE5-488B-A30C-22B0085E13A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CD64C5-FDE5-488B-A30C-22B0085E13A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CD64C5-FDE5-488B-A30C-22B0085E13A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CD64C5-FDE5-488B-A30C-22B0085E13A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

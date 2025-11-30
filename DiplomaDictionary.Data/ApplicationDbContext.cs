@@ -21,4 +21,9 @@ public sealed class ApplicationDbContext : DbContext, IUnitOfWork
     {
         Set<TEntity>().AddRange(entities);
     }
+
+    protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+    {
+        configurationBuilder.Properties<string>().UseCollation("NOCASE");
+    }
 }

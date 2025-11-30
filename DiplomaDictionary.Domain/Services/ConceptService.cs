@@ -125,7 +125,7 @@ public class ConceptService : IConceptService
     public async Task<List<SubjectDto>> GetSubjectsByEntranceAsync(string str)
     {
         var subjects = await _unitOfWork.Set<Subject>()
-            .Where(s => s.Name.Contains(str))
+            .Where(s => s.Name.ToLower().Contains(str.ToLower()))
             .ToListAsync();
 
         var subjectDtos = new List<SubjectDto>();
