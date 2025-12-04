@@ -1,0 +1,33 @@
+services:
+  webapi:
+    build:
+      context: .
+      dockerfile: ./DiplomaDictionary/Dockerfile
+    ports:
+      - "5000:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__DefaultConnection: "Data Source=/data/dictionary.db"
+    volumes:
+      - ./data:/data
+    networks:
+      - app-network
+
+  grpc:
+    build:
+      context: .
+      dockerfile: ./GrpcService/Dockerfile
+    ports:
+      - "5001:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__DefaultConnection: "Data Source=/data/dictionary.db"
+    volumes:
+      - ./data:/data
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+

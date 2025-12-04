@@ -13,6 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcService", "GrpcService\
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "k6-testing", "k6-testing\k6-testing.esproj", "{7991A2AB-08B9-1C4E-9E61-70165DA2ABF5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker-compose", "docker-compose", "{0F7FAB53-E77D-477F-A9A8-2309026D853F}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
