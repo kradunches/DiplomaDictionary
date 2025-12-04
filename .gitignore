@@ -4,3 +4,4 @@ obj/
 .vs/
 data/
 *.user
+node_modules/
